@@ -1,0 +1,39 @@
+{
+  "algoritma": [
+    {
+      "nama": "Aiss We",
+      "kategori": "Sorting",
+      "deskripsi": "Mengurutkan elemen dengan membandingkan pasangan berurutan dan menukarnya jika urutannya salah.",
+      "kompleksitas": {
+        "waktu": "O(n^2)",
+        "ruang": "O(1)"
+      },
+      "kode_pseudocode": [
+        "for i from 0 to n-1",
+        "  for j from 0 to n-i-1",
+        "    if arr[j] > arr[j+1]",
+        "      swap arr[j] and arr[j+1]"
+      ]
+    },
+    {
+      "nama": "Binary Search",
+      "kategori": "Searching",
+      "deskripsi": "Mencari elemen dalam array terurut dengan membagi ruang pencarian menjadi dua bagian.",
+      "kompleksitas": {
+        "waktu": "O(log n)",
+        "ruang": "O(1)"
+      },
+      "kode_pseudocode": [
+        "set low = 0, high = n - 1",
+        "while low <= high:",
+        "  mid = (low + high) / 2",
+        "  if arr[mid] == target:",
+        "    return mid",
+        "  else if arr[mid] < target:",
+        "    low = mid + 1",
+        "  else:",
+        "    high = mid - 1"
+      ]
+    }
+  ]
+}
